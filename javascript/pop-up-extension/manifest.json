@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Buddy: Pop Up Template",
+  "version": "1.0.0",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "pages/popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/extension-buddy-logo-16x16.png",
+      "32": "assets/icons/extension-buddy-logo-32x32.png",
+      "48": "assets/icons/extension-buddy-logo-48x48.png",
+      "128": "assets/icons/extension-buddy-logo-128x128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/extension-buddy-logo-16x16.png",
+    "32": "assets/icons/extension-buddy-logo-32x32.png",
+    "48": "assets/icons/extension-buddy-logo-48x48.png",
+    "128": "assets/icons/extension-buddy-logo-128x128.png"
+  },
+  "options_page": "pages/options/options.html",
+  "background": {
+    "service_worker": "scripts/background.js"
+  }
+}
