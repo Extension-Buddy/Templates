@@ -6,6 +6,11 @@ const setup = () => {
     // Process the message and send a response if needed
     sendResponse({ response: `We received the message, '${message.greeting}'` });
   });
+
+  // Show side panel when clicking on extension icon
+  chrome.sidePanel
+    .setPanelBehavior({ openPanelOnActionClick: true })
+    .catch((error) => console.error(error));
 }
 
 setup();
