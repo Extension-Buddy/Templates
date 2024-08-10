@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Extension Buddy: Page Template",
-  "version": "1.0.0",
+  "name": "Extension Buddy: Javascript Page Template",
+  "version": "0.1.0",
+  "author": "Extension Buddy Developer",
   "permissions": [
     "storage",
     "tabs"

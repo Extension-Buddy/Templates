@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Extension Buddy: Pop Up Template",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "author": "Extension Buddy Developer",
   "permissions": [
     "storage"
   ],

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Buddy: React Popup Template",
+  "version": "0.1.0",
+  "author": "Extension Buddy Developer",
+  "background": {
+     "service_worker": "background.js"
+  },
+  "permissions": [
+     "declarativeContent",
+     "tabs",
+     "storage"
+  ],
+  "action": {
+     "default_popup": "popup.html",
+     "default_title": "Extension Buddy Extension",
+     "default_icon": {
+        "16": "/images/extension-buddy-logo-16.png",
+        "32": "/images/extension-buddy-logo-32.png",
+        "48": "/images/extension-buddy-logo-48.png",
+        "128": "/images/extension-buddy-logo-128.png"
+     }
+  },
+  "icons": {
+     "16": "/images/extension-buddy-logo-16.png",
+     "32": "/images/extension-buddy-logo-32.png",
+     "48": "/images/extension-buddy-logo-48.png",
+     "128": "/images/extension-buddy-logo-128.png"
+  }
+}

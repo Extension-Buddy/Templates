@@ -1,34 +1,51 @@
-# Chrome Extension - Getting Started Guide
+# Extension Buddy - Template Getting Started Guide
 
-This is a basic guide to help you get started with creating a Chrome extension using Extension Buddy's Manifest V3 Templates.
+This guide will help you quickly get started with creating a browser extension using Extension Buddy's Manifest V3 Templates.
 
 ## Prerequisites
 
-Before you begin, make sure you have the following installed:
+Before you begin, ensure you have a modern web browser installed that supports extensions.
 
-- [Google Chrome](https://www.google.com/chrome/) browser or equivalent. 
+## What's Included
+- 📐 This amazing browser extension template
+- ⚡️  Build scripts for quick releasing
+- 💰 [Extension Buddy Monetize SDK](https://github.com/Extension-Buddy/extension-buddy-sdk) - Monetize your extensions and turn your innovative ideas into a profitable business.
+
+---
 
 ## Quick Start
 
-1. **Clone the Template**:
+### Clone the Template
 
-   Clone this template to your local machine:
+Clone this template to your local machine, and copy the template **folder** to your desired location. Rename the extension as needed.
 
-2. **Navigate to Extension Settings**:
+### Build the Template
 
-   Open Google Chrome and navigate to `chrome://extensions/`.
+**Navigate to the Template Folder**
 
-3. **Enable Developer Mode**:
+```bash
+cd template-name-folder
+```
 
-   Enable Developer mode by toggling the switch in the top right corner.
+### Install the Template
 
-4. **Load the Extension**:
+1. **Access Extension Settings**
 
-   Click on the "Load unpacked" button and select the extension directory from your local machine.
+   Open your browser and navigate to the extensions settings page. You can typically find this in the browser’s menu or by entering a specific URL (e.g., `chrome://extensions/` for Chrome).
 
-5. **Test the Extension**:
+2. **Activate Developer Mode**
 
-   The extension should now appear in the list of installed extensions. Click on the extension icon in the browser toolbar to interact with it. Feel free to pin it for easy access.
+   Enable Developer Mode by toggling the switch or selecting the corresponding option on the extensions page.
+
+3. **Load Your Extension**
+
+   Click on the "Load unpacked" button (or equivalent) and choose the directory from your extension template folder.
+
+4. **Launch the Extension**
+
+   Your extension should now appear in the list of installed extensions. Click its icon in the browser toolbar to start using it. Consider pinning it for easier access.
+
+<hr>
 
 ## Manifest V3 Resources
 
