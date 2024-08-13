@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Buddy: React Side Panel Template",
+  "version": "0.1.0",
+  "author": "Extension Buddy Developer",
+  "background": {
+     "service_worker": "background.js"
+  },
+  "permissions": [
+     "storage",
+     "sidePanel"
+  ],
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "action": {
+     "default_title": "Click to show side panel",
+     "default_icon": {
+        "16": "/images/extension-buddy-logo-16.png",
+        "32": "/images/extension-buddy-logo-32.png",
+        "48": "/images/extension-buddy-logo-48.png",
+        "128": "/images/extension-buddy-logo-128.png"
+     }
+  },
+  "icons": {
+     "16": "/images/extension-buddy-logo-16.png",
+     "32": "/images/extension-buddy-logo-32.png",
+     "48": "/images/extension-buddy-logo-48.png",
+     "128": "/images/extension-buddy-logo-128.png"
+  }
+}
