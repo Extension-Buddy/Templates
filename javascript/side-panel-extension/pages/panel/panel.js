@@ -1,6 +1,8 @@
 const clickMeButton  = document.getElementById('clickMeButton');
 const sendMessageButton = document.getElementById('sendMessageButton');
 
+const EXTENSION_BUDDY_KEY = '_YOUR_KEY_';
+
 clickMeButton.addEventListener('click', () => {
     alert('clickMeButton clicked!');
 });
@@ -13,3 +15,7 @@ sendMessageButton.addEventListener('click', () => {
         alert(`background.js received the message: ${ JSON.stringify(response)}`);
     });
 });
+
+// Connection to Extension Buddy
+const client = new ExtensionBuddy(EXTENSION_BUDDY_KEY);
+client.getUserStatus().then((res) => console.log(`status: ${stat?.status}`));

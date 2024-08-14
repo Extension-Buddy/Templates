@@ -23,17 +23,23 @@ Clone this template to your local machine, and copy the template **folder** to y
 
 1. **Navigate to the Template Folder**
 
-```bash
-cd template-name-folder
-```
+    ```bash
+    cd template-name-folder
+    ```
 
-2. **Build the Template**
+2. **Install Dependencies**
 
-```bash
-make build
-```
+    ```bash
+    npm install
+    ```
 
-After building, you will have a `/dist` folder and a `lastBuild.zip` file that you can use to test or submit to extension stores.
+3. **Build the Template**
+
+    ```bash
+    make build
+    ```
+
+   After building, you will have a `/dist` folder and a `lastBuild.zip` file that you can use to test or submit to extension stores.
 
 ### Install the Template
 
@@ -52,6 +58,14 @@ After building, you will have a `/dist` folder and a `lastBuild.zip` file that y
 4. **Launch the Extension**
 
    Your extension should now appear in the list of installed extensions. Click its icon in the browser toolbar to start using it. Consider pinning it for easier access.
+
+### Testing the Template
+
+You can run your [Jest](https://jestjs.io/) tests using:
+
+```bash
+npm run test
+```
 
 <hr>
 

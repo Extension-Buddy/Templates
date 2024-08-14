@@ -8,6 +8,8 @@ const EXTENSION_BUDDY_KEY = '_YOUR_KEY_';
 const setup = () => {
   chrome.runtime.onInstalled.addListener(async () => {
     console.log('Chrome extension successfully installed!');
+
+    // Connection to Extension Buddy
     const client = new ExtensionBuddy(EXTENSION_BUDDY_KEY);
     const status = await client.getUserStatus();
     console.log(`status: ${status?.status}`);

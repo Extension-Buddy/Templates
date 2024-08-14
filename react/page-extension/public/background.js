@@ -14,6 +14,11 @@ const setup = () => {
     const status = await client.getUserStatus();
     console.log(`status: ${status?.status}`);
   });
+
+  // Open page in new tab
+  chrome.action.onClicked.addListener((tab) => {
+    chrome.tabs.create({ url: chrome.runtime.getURL('page.html') });
+  });
   
   // Listen for messages from content scripts or popup scripts
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
@@ -22,11 +27,6 @@ const setup = () => {
     // Process the message and send a response if needed
     sendResponse({ response: `We received the message, '${message.greeting}'` });
   });
-
-  // Show side panel when clicking on extension icon
-  chrome.sidePanel
-    .setPanelBehavior({ openPanelOnActionClick: true })
-    .catch((error) => console.error(error));
 }
 
 setup();
